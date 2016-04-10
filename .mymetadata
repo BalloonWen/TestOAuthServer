@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="TestOAuthServer"
+  id="myeclipse.1458102903048"
+  context-root="/TestOAuthServer"
+  j2ee-spec="5.0"
+  archive="TestOAuthServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

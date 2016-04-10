@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>server.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadToServer</servlet-name>
+    <servlet-class>server.UploadToServer</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PushMessageServlet</servlet-name>
+    <servlet-class>server.PushMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReceiveMessageServlet</servlet-name>
+    <servlet-class>server.ReceiveMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrintJob</servlet-name>
+    <servlet-class>bean.PrintJob</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadToServer</servlet-name>
+    <url-pattern>/servlet/UploadToServer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PushMessageServlet</servlet-name>
+    <url-pattern>/servlet/PushMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReceiveMessageServlet</servlet-name>
+    <url-pattern>/servlet/ReceiveMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrintJob</servlet-name>
+    <url-pattern>/servlet/PrintJob</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+         C:\Users\Balloon\Desktop\
+     </param-value> 
+</context-param>
+  
+</web-app>
